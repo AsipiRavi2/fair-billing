@@ -4,9 +4,10 @@
   "description": "fair-billing-app",
   "main": "index.js",
   "scripts": {
-    "test": "\"echo \\\"Error: no test specified\\\" && exit 1\""
+    "start": "node fairBilling.js",
+    "test": "node test.js ./fairBilling-test.js"
   },
   "author": "Asipi Ravi",
-  "license": "ISC"
-  
+  "license": "ISC",
+  "dependencies": {}
 }

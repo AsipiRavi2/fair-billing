@@ -5,10 +5,15 @@ module.exports =
     rawDataToArray: //raw data to array
         (rawData) => 
         {
-            var dataArray = rawData.trim().split("\r\n").map((ele)=>
+            var dataArray = []
+            rawData.trim().split("\r\n").forEach((ele)=>
                 {
-                let deltaArray = ele.split(" ")
-                 return deltaArray
+                    let sessionData = ele.split(" ")
+                    if(sessionData.length===3){
+                        if(sessionData[0].match(/(2[0-3]|[01][0-9]):[0-5][0-9]:[0-5][0-9]/) && sessionData[1].match(/[A-Z1-9]/) && sessionData[2].match(/Start|End/)){
+                            dataArray.push(sessionData)
+                        }
+                    }
                 })
             return dataArray
         },
