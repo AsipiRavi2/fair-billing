@@ -13,7 +13,7 @@ npm test / npm run test
 *** testing is being done on distinct sessions.
 
 
-#####
-React out Asipi Ravi for any further info 
-contact +91 8981742444
-#####
+# contact detail
+------------------
+Asipi Ravi
++91 8981742444
